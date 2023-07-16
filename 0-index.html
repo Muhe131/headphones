@@ -6,30 +6,34 @@
           <title>Headphones</title>
           <link rel="icon" type="icon" href="#">
           <link rel="stylesheet" href="css/0-styles.css">
-          <link href="<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
      </head>
      <body>
-          <header>
-                    <img src="..//headphones/asset/images/logo.png">
-                    <nav>
-                         <a href="#"> What We do</a>
-                         <a href="#"> Our Results</a>
-                         <a href="#"> Contact us</a>
+          <header >
+               <div  class="header-logo-and-links">
+                    <img src="../headphones/asset/images/logo_headphones.png" alt="logo">
+                    <nav >
+                         <a href="#">What We do</a>
+                         <a href="#">Our Results</a>
+                         <a href="#">Contact us</a>
                     </nav>
-          </header>
-
-          <section class="first-section">
-               <div id="paraf"">
-                    <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum, autem assumenda inventore atque quam, vitae numquam tenetur iure laudantium laboriosam natus sint expedita et saepe pariatur temporibus. Eligendi, nulla.</p>
                </div>
+          <!--hero-piece-->
                <div>
-                    <button id="button">CALL TO ACTION</button>
+                    <div id="paraf"">
+                         <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum, autem assumenda inventore atque quam, vitae numquam tenetur iure laudantium laboriosam natus sint expedita et saepe pariatur temporibus. Eligendi, nulla.</p>
+                    </div>
+                    <div>
+                         <button id="button">CALL TO ACTION</button>
+                    </div>
+                    <div id="paraf-1">
+                         <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cum neque iste consectetur totam explicabo cumque laboriosam dolor nisi, incidunt tenetur qui labore odio, numquam, adipisci eligendi? Quia, similique culpa?</p>
+                    </div>
+                    </div>
                </div>
-               <div id="paraf-1">
-                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cum neque iste consectetur totam explicabo cumque laboriosam dolor nisi, incidunt tenetur qui labore odio, numquam, adipisci eligendi? Quia, similique culpa?</p>
-               </div>
-          </section>
-
+               <!--end of hero piece-->
+          </header>
+          <!--what we do. . . section-->
           <section class="second-section">
                     <div >
                          <h1 id="heading">what we do . . .</h1>
@@ -38,7 +42,8 @@
                          <p id="result">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas laudantium? Cum labore veritatis quia delectus, maxime nulla officiis commodi facere, consectetur ratione debitis accusamus optio corporis ut ex placeat.</p>
                     </div>
           </section>
-
+          <!--end of what we do. . . section-->
+          <!--our results section-->
           <section class="third-section">
                <div class="sound">
                     <div>
@@ -53,7 +58,6 @@
                          </div>
                     </div>
                </div>
-
                <div class="video">
                     <div >
                          <div >
@@ -67,7 +71,6 @@
                          </div>
                     </div>
                </div>
-
                <div class="music">
                     <div>
                          <div >
@@ -81,7 +84,6 @@
                          </div>
                     </div>
                </div>
-
                <div class="hearing">
                     <div >
                          <div >
@@ -94,26 +96,19 @@
                               <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
                          </div>
                     </div>
-
-
           </section>
-
-
           <section class="result-section">
-
                <div class="one">
                     <div>
-                         <h1 class="text-one">Our results speaks for themselves</h1>
+                         <h1 >Our results speaks for themselves</h1>
                     </div>
                </div>
-
                <div class="two">
                     <div>
-                         <p class="text-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda reprehenderit esse asperiores cum dolorum hic ducimus quae deserunt illo, dignissimos nemo perspiciatis maiores vero voluptatibus qui error sunt maxime.</p>
+                         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda reprehenderit esse asperiores cum dolorum hic ducimus quae deserunt illo, dignissimos nemo perspiciatis maiores vero voluptatibus qui error sunt maxime.</p>
                     </div>
                </div>
                <div class="three">
-
                     <div >
                          <div>
                               <img class="polygon" src="../headphones/asset/images/dot_1.png">
@@ -134,43 +129,44 @@
                               <img class="polygon" src="../headphones/asset/images/dot_1.png">
                          </div>
                     </div>
-
                </div>
-
           </section>
+          <!--end of our results section-->
+          <!--contact us section-->
           <section>
                <div class="container">
-                    <div style="text-align:center">
-                      <h2>Contact Us</h2>
-                    </div>
-                    <div class="row">
-                         <div class="column">
-                              <form action="/action_page.php">
+                    <h1>Contact Us</h1>
+               </div>
+               <div class="row">
+                    <div class="column">
+                         <form action="/action_page.php">
                               <label for="fname">Name</label>
-                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                              <input type="text" id="fname" name="firstname">
                               <label for="lname"">e-mail</label>
-                              <input type="text" id="lname" name="lastname" placeholder="Your e-mail..">
+                              <input type="text" id="lname" name="lastname" >
                               </select>
-                              <label for="subject">Your message</label>
-                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                              <input type="submit" value="Submit">
-                        </form>
-                      </div>
+                              <label for="subject">Your message:</label>
+                              <input type="text" id="message" name="message">
+                              <input type="button"  id="button" value="CALL TO ACTION" id="form-button">
+                         </form>
                     </div>
                </div>
           </section>
-
-          <footer>
-               <div>
-                    <img src="">
-                    <img src="">
-                    <img src="">
+           <!--end of contact us section-->
+          <div class="footer">
+               <div class="col-1">
+                    <img src="../headphones/asset/images/logo_headphones.png" alt="logo">
                </div>
-               <div>logo</div>
-               <div>
-                    <p>headphones 2020</p>
+               <div  class="col-1">
+                    <p>&copy; headphones 2020</p>
                </div>
-          </footer>
-
+               <div class="col-1">
+                    <div class="social-links">
+                         <img src="../headphones/asset/images/facebook.png">
+                         <img src="../headphones/asset/images/twitter.png">
+                         <img src="../headphones/asset/images/instagram.png">
+                    </div>
+               </div>
+          </div>
      </body>
 </html>

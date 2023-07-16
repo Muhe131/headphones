@@ -1,19 +1,29 @@
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+     .column, {
+       width: 100%;
+       margin-top: 0;
+     }
+   }
 body {
-     /*border: 1px solid blue;*/
-     width: 1400px;
-     height: 3006px;
+     width: 1000px;
+     height: 2500px;
      margin: 0;
      padding: 0;
      font-family: 'Poppins';
 }
 header {
-     border: 1px solid  yellow;
-     width: 1345px;
-     padding: 0;
-     height: 32px;
-     background-color: rgb(93, 84, 84);
-     display: flex;
+     background-image: url(../asset/images/headphones_hero_1.jpg);
+     width: 1000px;
+     height: 600px;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.header-logo-and-links {
+    display: flex;
      justify-content: space-between;
+     align-items:center;
 }
 nav a{
      text-decoration:none;
@@ -23,29 +33,24 @@ nav a{
      color:white;
 }
 nav a:hover{
-     color: #f4c93a;
+     color:red;
 }
-.first-section  {
-     /*border: 1px solid red;*/
-     width: 1345px;
-     height: 600px;
-     padding: 0;
-     background-color: rgb(74, 68, 68);
+nav a:hover a:active {
+     color: green;
 }
 
 #paraf {
-    /*border: 1px solid black;*/
     margin-top: 100px;
     margin-left: 300px;
      width: 637px;
      height: 184px;
      text-align: center;
-     /*display: flex;*/
-     /*justify-content:center;*/
+     color: #f2f2f2;
 }
 #button {
      border: 1px solid red;
      display: flex;
+     color: #f2f2f2;
      justify-content: center;
      width: 162px;
      height: 44px;
@@ -55,21 +60,18 @@ nav a:hover{
      background-color:red;
 }
 #paraf-1  {
-     /*border: 1px solid blue;*/
      text-align: center;
      margin-top: 80px ;
      width: 637px;
      margin-left: 300px;
      height: 184px;
-     /*display: flex;*/
+     color: #f2f2f2;
 }
 .second-section {
-     /*border: 1px solid greenyellow;*/
-     width: 1345px;
-     height: 400px;
+     width: 1000px;
+     height: 250px;
      margin-top: 0;
      margin-left: 0;;
-     /*display: flex;*/
 }
 #heading {
      width: 290px;
@@ -79,17 +81,14 @@ nav a:hover{
      margin-left: 510px;
 }
 #result {
-     /*border: 1px solid black;*/
      width: 637px;
      margin-top: 50px;
      text-align: center;
      margin-left: 390px;
      height: 100px;
-     /*display: flex;*/
 }
 .third-section {
-     /*border: 1px solid black;*/
-     width: 1345px;
+     width: 1000px;
      height: 300px;
      margin-top: 0;
      margin-left: 0;
@@ -98,30 +97,24 @@ nav a:hover{
      align-items:center;
 }
 .sound {
-     /*border: 1px solid black;*/
      height: 50px;
      width: 207px;
      height: 180px;
      margin: 5px;
-     /*display: flex;
-     align-items:center;*/
 }
 .video {
-     /*border: 1px solid black;*/
      height: 50px;
      width: 207px;
      height: 180px;
      margin: 5px;
 }
 .music {
-     /*border: 1px solid black;*/
      height: 50px;
      width: 207px;
      height: 180px;
      margin: 5px;
 }
 .hearing {
-     /*border: 1px solid black;*/
      height: 50px;
      width: 207px;
      height: 180px;
@@ -139,114 +132,104 @@ nav a:hover{
      padding-left: 45px ;
 }
 .result-section {
-     /*border: 1px solid rgb(255, 184, 3);*/
-     width: 1345px;
-     height: 350px;
-     background-color: rgb(45, 43, 43);
-     /*display: flex;
-     justify-content:center;
-     align-items:center;*/
+     width: 1000px;
+     height: 600px;
+     background-image: url(../asset/images/headphones_hero_2.jpg);
 }
-.text-one{
-     /*border: 1px solid yellow;*/
+.one{
      text-align:center;
-     margin-top:40px;
+     margin-top:60px;
      margin-left: 50px;
      margin-right: 50px;
      display: flex;
      flex-direction: column;
+     color: #f2f2f2;
+     font-size: larger;
 }
-.text-two{
-     /*border: 1px solid rgb(229, 17, 17);*/
-     text-align:center;
+.two{
+    color: #f2f2f2;
+    text-align:center;
      margin-top:40px;
      margin-left: 50px;
      margin-right: 50px;
-     /*display: flex;
-     flex-direction: row;*/
 }
 .three {
      display: flex;
-     justify-content: center;
+     justify-content:center;
+     align-items: end;
 }
 .polygon {
-     /*border: 1px solid blue;*/
+     margin-top: 100px;
      display: flex;
-     justify-content: space-evenly;
+     justify-content: space-between;
      height: 150px;
-     margin:5px;
+     margin-bottom:5px;
 }
 * {
      box-sizing:calc (100% 5px);
    }
-
    input[type=text], select, textarea {
      width: 100%;
      padding: 12px;
-     border: 1px solid #ccc;
-     margin-top: 6px;
-     margin-bottom: 16px;
+     /*border: 1px solid #ccc;*/
+     margin-top: 0;
+     margin-bottom: 10px;
      resize: vertical;
    }
-
-   input[type=submit] {
-     background-color: #04AA6D;
-     color: white;
-     padding: 12px 20px;
-     border: none;
-     cursor: pointer;
-   }
-
-   input[type=submit]:hover {
-     background-color: rgb(7, 29, 7)
-   }
-
-   /* Style the container/contact section */
    .container {
-     border-radius: 5px;
-     background-color: #f2f2f2;
-     padding: 10px;
+     /*border-radius: 5px;*/
+     background-color:#f2f2f2;
+     padding: 20px;
+     margin-left: 10px;
+     text-align: center;
    }
 
    /* Create two columns that float next to eachother */
    .column {
      float: left;
-     width: 50%;
-     margin-top: 6px;
+     width: 30%;
+     margin-top: 3px;
      padding: 20px;
    }
-
+   #button {
+     border: 1px solid red;
+     display: flex;
+     color: #f2f2f2;
+     justify-content: center;
+     width: 162px;
+     height: 44px;
+     border-radius: 15px;
+     margin-left: 550px;
+     align-items: center;
+     background-color:red;
+   }
+   #button:hover {
+     opacity: 0.9;
+     color: #FF6565;
+   }
+   .
+   #button:active {
+     opacity: 0.9;
+     color: #FF6565;
+   }
    /* Clear floats after the columns */
    .row:after {
      content: "";
      display: table;
      clear: both;
    }
-
-   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-   @media screen and (max-width: 480px) {
-     .column, input[type=submit] {
-       width: 100%;
-       margin-top: 0;
-     }
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.contact-us {
+.contact-us {
      border: 1px solid red;
-     /*display: flex;*/
-     /*width: 335px;
+     display: flex;
+     width: 335px;
      height: 373px;
      text-align: center;
+}
+.footer {
+     display: flex;
+     background-image: url(../asset/images/footer_background.png);
+     height: 200px;
+     justify-content: space-around;
+     align-items: center;
+
 }
